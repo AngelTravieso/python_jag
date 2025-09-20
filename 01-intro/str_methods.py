@@ -47,3 +47,36 @@ data = ['Angel', 'Travieso', ' Java', 'DotNet']
 text = '/'.join(data)
 print(text)
 
+# Buscar en una cadena
+text = 'Hola, Angel que tal como estas!'
+print(text.find("Angel"))
+
+# Devuelve el indice mas bajo donde coincida la busqueda
+# Arroja excepcion si no encuentra (esta es una diferencia con find)(
+print(text.index('como'))
+
+# Verificar si el string empieza o termina con un string especifico
+print(text.startswith('Hola'))
+print(text.endswith('estas!'))
+
+number = '1234'
+decimal = '1234.10'
+text = 'Python'
+mix = 'Python3'
+
+print(number.isnumeric())
+print(number.isdigit())
+print(decimal.isdecimal())
+print(text.isalnum())
+print(mix.isalpha())
+print(text.isalpha())
+
+text = '   hola Angel como estas, bienvenido al curso de Python!   '
+text_clean = text.strip().capitalize().title()
+print(text_clean)
+
+new_text = text_clean.replace('Curso De Python', 'Curso de Python3')
+print(new_text)
+
+words = new_text.split()
+print(words)
